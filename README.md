@@ -34,7 +34,14 @@ Setiap item dalam inventory memiliki atribut/field sebagai berikut:
 ## 🛠️ Panduan Instalasi & Cara Menjalankan Project
 
 ### 1. Klon / Buka Direktori Project
+<<<<<<< HEAD
 Buka terminal/command prompt lalu masuk ke direktori tempat project disimpan
+=======
+Buka terminal/command prompt lalu clone dan masuk ke direktori project:
+```bash
+git clone https://github.com/Nazlul31/uas-prakkpl-game-inventory.git
+```
+>>>>>>> 915082245c4dc7900baa389831d1b29f93d9f401
 
 ### 2. Buat & Aktifkan Virtual Environment (venv)
 * **Membuat venv:**
