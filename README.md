@@ -37,7 +37,6 @@ Setiap item dalam inventory memiliki atribut/field sebagai berikut:
 Buka terminal/command prompt lalu clone dan masuk ke direktori project:
 ```bash
 git clone https://github.com/Nazlul31/uas-prakkpl-game-inventory.git
-cd uas-prakkpl-game-inventory
 ```
 
 ### 2. Buat & Aktifkan Virtual Environment (venv)
