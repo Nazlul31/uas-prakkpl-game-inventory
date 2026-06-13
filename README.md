@@ -34,9 +34,10 @@ Setiap item dalam inventory memiliki atribut/field sebagai berikut:
 ## 🛠️ Panduan Instalasi & Cara Menjalankan Project
 
 ### 1. Klon / Buka Direktori Project
-Buka terminal/command prompt lalu masuk ke direktori tempat project disimpan:
+Buka terminal/command prompt lalu clone dan masuk ke direktori project:
 ```bash
-cd "c:\Users\Acer\OneDrive\Desktop\Weapon_Inventory"
+git clone https://github.com/Nazlul31/uas-prakkpl-game-inventory.git
+cd uas-prakkpl-game-inventory
 ```
 
 ### 2. Buat & Aktifkan Virtual Environment (venv)
