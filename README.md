@@ -6,7 +6,7 @@ API ini dirancang untuk mengelola data penyimpanan item/equipment game (CRUD) de
 
 ---
 
-## 🚀 Fitur & Spesifikasi API
+## Fitur & Spesifikasi API
 
 ### 1. Struktur Data Item (Model)
 Setiap item dalam inventory memiliki atribut/field sebagai berikut:
@@ -31,14 +31,10 @@ Setiap item dalam inventory memiliki atribut/field sebagai berikut:
 
 ---
 
-## 🛠️ Panduan Instalasi & Cara Menjalankan Project
+## Panduan Instalasi & Cara Menjalankan Project
 
 ### 1. Klon / Buka Direktori Project
-<<<<<<< HEAD
 Buka terminal/command prompt lalu masuk ke direktori project:
-=======
-Buka terminal/command prompt lalu clone dan masuk ke direktori project:
->>>>>>> 0881a9c9a61e8a3b66236a4e53b06ea3a25da44a
 ```bash
 git clone https://github.com/Nazlul31/uas-prakkpl-game-inventory.git
 cd uas-prakkpl-game-inventory
