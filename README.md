@@ -34,11 +34,7 @@ Setiap item dalam inventory memiliki atribut/field sebagai berikut:
 ## 🛠️ Panduan Instalasi & Cara Menjalankan Project
 
 ### 1. Klon / Buka Direktori Project
-Buka terminal/command prompt lalu clone dan masuk ke direktori project:
-```bash
-git clone https://github.com/Nazlul31/uas-prakkpl-game-inventory.git
-cd uas-prakkpl-game-inventory
-```
+Buka terminal/command prompt lalu masuk ke direktori tempat project disimpan
 
 ### 2. Buat & Aktifkan Virtual Environment (venv)
 * **Membuat venv:**
@@ -72,74 +68,3 @@ python manage.py migrate
 python manage.py runserver
 ```
 Server akan aktif di: **`http://127.0.0.1:8000/`**
-
----
-
-## 🧪 Cara Menjalankan Unit Tests (Kualitas Perangkat Lunak)
-Untuk menguji kehandalan fungsionalitas CRUD secara otomatis, Anda dapat menjalankan unit tests bawaan Django dengan perintah:
-```bash
-python manage.py test
-```
-
----
-
-## 📝 Panduan Pengujian Menggunakan Postman (Panduan UAS)
-
-### 1. Menambahkan Item Baru (POST)
-* **URL:** `http://127.0.0.1:8000/items/`
-* **Method:** `POST`
-* **Headers:** `Content-Type: application/json`
-* **Body (raw - JSON):**
-  ```json
-  {
-      "item_name": "Excalibur",
-      "item_type": "Weapon",
-      "rarity": "Legendary",
-      "stat_value": 150,
-      "is_equipped": false
-  }
-  ```
-* **Screenshot Target:** Ambil tangkapan layar yang menampilkan body request, URL, status code **`201 Created`**, dan response JSON.
-
-### 2. Mengambil Semua Item (GET)
-* **URL:** `http://127.0.0.1:8000/items/`
-* **Method:** `GET`
-* **Screenshot Target:** Menampilkan status code **`200 OK`** dan list array JSON.
-
-### 3. Mengambil Detail Item (GET Detail)
-* **URL:** `http://127.0.0.1:8000/items/1/` *(sesuaikan ID)*
-* **Method:** `GET`
-* **Screenshot Target:** Menampilkan status code **`200 OK`** dan detail objek item tunggal.
-
-### 4. Memperbarui Item Secara Penuh (PUT)
-* **URL:** `http://127.0.0.1:8000/items/1/` *(sesuaikan ID)*
-* **Method:** `PUT`
-* **Headers:** `Content-Type: application/json`
-* **Body (raw - JSON):**
-  ```json
-  {
-      "item_name": "Excalibur Reforged",
-      "item_type": "Weapon",
-      "rarity": "Legendary",
-      "stat_value": 180,
-      "is_equipped": true
-  }
-  ```
-* **Screenshot Target:** Menampilkan status code **`200 OK`** dan response data terbaru yang terupdate.
-
-### 5. Memperbarui Sebagian Item (PATCH)
-* **URL:** `http://127.0.0.1:8000/items/1/` *(sesuaikan ID)*
-* **Method:** `PATCH`
-* **Headers:** `Content-Type: application/json`
-* **Body (raw - JSON):**
-  ```json
-  {
-      "is_equipped": false
-  }
-  ```
-* **Screenshot Target:** Menampilkan status code **`200 OK`** dengan nilai `is_equipped` yang berubah menjadi `false`.
-
-### 6. Menghapus Item (DELETE)
-* **URL:** `http://127.0.0.1:8000/items/1/` *(sesuaikan ID)*
-* **Method:** `DELETE`
-* **Screenshot Target:** Menampilkan status code **`204 No Content`** (response body kosong).
